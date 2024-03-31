@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Gmail Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  .gmail-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  #gmail {
+    width: 200px;
+    height: 200px;
+  }
+  #gmail_show{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 7px 7px 7px rgb(174, 174, 174);
+  }
+  #button_g{
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(114, 114, 114);
+    height: 37px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Welcome to My Gmail Page</h1>
+  <div class="gmail-container"> 
+    <p id="gmail_show"></p>
+    <p>Click the button below to access your Gmail</p>
+    <button id="button_g" onclick="redirectToGmail()">Access Gmail</button>
+  </div>
+</div>
+<script>
+  function redirectToGmail() {
+    document.getElementById("gmail_show").innerHTML = "mfozanp@gmail.com"
+  }
+</script>
+</body>
+</html>
